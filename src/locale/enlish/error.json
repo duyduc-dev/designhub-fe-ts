@@ -1,0 +1,9 @@
+{
+  "OTP_NOT_MATCHED": "OTP is not matched",
+  "Unauthorized": "Session expired",
+  "UNAUTHORIZED": "Session expired",
+  "DESIGN_NOT_FOUND": "Design not found!",
+  "EXPIRED_TIME": "Expired time",
+  "OTP_EXPIRED_TIME": "OTP expired time",
+  "TOO_MANY_REQUESTS": "Too many requests"
+}

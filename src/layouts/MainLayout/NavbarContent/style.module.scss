@@ -1,0 +1,21 @@
+@use '@/assets/styles/colors';
+
+.container {
+  min-width: 264px;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: colors.$neutral-800;
+}
+
+.btnCreateDesign {
+  width: 100%;
+  margin-top: 16px !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.3rem;
+}

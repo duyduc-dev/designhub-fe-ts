@@ -1,0 +1,51 @@
+@use '@/assets/styles/variables';
+@use '@/assets/styles/colors';
+
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  position: absolute;
+  top: variables.$header-height + 12px;
+  background-color: colors.$white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.separator {
+  width: 2px;
+  background-color: colors.$neutral-200;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.colorRounded {
+  width: 24px;
+  height: 24px;
+  background-color: colors.$transparent;
+  border-radius: 50%;
+  border: 1px solid colors.$neutral-100;
+  cursor: pointer;
+}
+
+.conor {
+  @extend .center;
+}
+
+.wrapTool {
+  display: flex;
+  align-items: center;
+}
+
+.tool {
+  @extend .center;
+  cursor: pointer;
+}

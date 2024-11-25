@@ -1,0 +1,10 @@
+@use '@/assets/styles/colors';
+
+.tooltip {
+  z-index: 99999999 !important;
+  border-radius: 4px !important;
+  font-weight: 400;
+  padding: 4px 10px !important;
+  font-size: 13px;
+  background-color: colors.$wash !important;
+}

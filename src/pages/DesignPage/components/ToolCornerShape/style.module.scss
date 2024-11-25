@@ -1,0 +1,20 @@
+@use '@/assets/styles/colors';
+
+
+.wrapper {
+  background-color: colors.$white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.containerProgress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .inputPercent {
+    width: 52px;
+    height: 48px;
+  }
+}

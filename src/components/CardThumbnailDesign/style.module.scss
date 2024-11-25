@@ -1,0 +1,29 @@
+@use "@/assets/styles/colors";
+
+.wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: colors.$neutral-900;
+}
+
+
+.thumbnail {
+  flex: 1;
+  background-color: colors.$neutral-100;border-radius: 16px;
+}
+
+.content {
+  margin-top: 8px;
+  .titleDesign {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .description {
+    margin-top: 4px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: colors.$neutral-400;
+  }
+}

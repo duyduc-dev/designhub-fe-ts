@@ -1,0 +1,14 @@
+.container {
+  .label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+  }
+}
+
+.listDesign {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}

@@ -1,0 +1,74 @@
+@use "@/assets/styles/colors";
+
+.btnContainer {
+  padding: 6px 8px !important;
+  text-align: left;
+  border-radius: 8px !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.containerProfilePopup {
+  background-color: colors.$white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  width: 320px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px ;
+
+  .wrapperHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+
+    .headInfo {
+      flex: 1;
+    }
+
+    .userTitle {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .subTitle {
+      font-size: 1.2rem;
+      color: colors.$neutral-500;
+      font-weight: 500;
+    }
+  }
+
+  .containerListAction {
+    padding-top: 8px;
+    .itemAction {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 12px 16px;
+      transition: all 0.1s linear;
+      &:hover {
+        background-color: rgba(colors.$neutral-300, 0.2);
+      }
+    }
+  }
+
+
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: colors.$neutral-200;
+}
+
+.btnSignIn {
+  width: 200px;
+}

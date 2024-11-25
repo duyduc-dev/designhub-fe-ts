@@ -1,0 +1,29 @@
+@use '@/assets/styles/colors';
+
+.containerGroupInput {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.textareaWrapper {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 6px;
+
+  &:focus-within {
+    border-color: colors.$neutral-800;
+  }
+
+  .textarea {
+    padding: 8px 14px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+  }
+}

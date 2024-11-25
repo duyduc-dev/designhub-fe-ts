@@ -1,0 +1,94 @@
+@use "@/assets/styles/colors";
+
+.container {
+  width: 72px;
+  min-width: 72px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.listTools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .containerItem {
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: colors.$neutral-700;
+    cursor: pointer;
+
+    .iconContainer {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .1s linear;
+      border-radius: 8px;
+    }
+
+    .titleItem {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+
+    &.tabActive {
+      .iconContainer {
+        background-color: colors.$white !important;
+        color: colors.$primary-500;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .titleItem {
+        color:  colors.$neutral-900;
+      }
+    }
+
+    &:hover {
+      .iconContainer {
+        background-color: rgba(colors.$blue-500, 0.2);
+        color: colors.$blue-500;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .titleItem {
+        color:  colors.$neutral-900;
+      }
+    }
+
+  }
+
+
+}
+
+.contentSidebarWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  padding: 8px;
+  display: none;
+  z-index: 9999;
+
+  &.visible {
+    display: block;
+  }
+
+
+  .innerSidebarContent {
+    background-color: colors.$white;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: 100%;
+    width: 360px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}

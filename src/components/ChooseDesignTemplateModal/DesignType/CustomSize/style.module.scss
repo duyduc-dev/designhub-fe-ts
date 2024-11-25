@@ -1,0 +1,27 @@
+.container {
+  flex: 1;
+}
+
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 1.6rem;
+}
+
+.wrapFormInput {
+  flex: 1;
+}
+
+.formControl {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.btnCreateNewDesign {
+  margin-top: 12px !important;
+}

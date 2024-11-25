@@ -1,0 +1,22 @@
+  @use "@/assets/styles/colors";
+  @use "@/assets/styles/variables";
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    min-height: calc(100vh - #{variables.$sidebar-width});
+    max-height: calc(100vh - #{variables.$sidebar-width});
+  }
+
+  .stageWorkspace {
+    background-color: colors.$white;
+    display: inline-block;
+  }
+
+  .designContent {
+    flex: 1
+  }

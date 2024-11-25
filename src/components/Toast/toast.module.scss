@@ -1,0 +1,52 @@
+@use "@/assets/styles/colors";
+
+.container {
+  background-color: colors.$white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  .wrapperIcon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hasMessage {
+  align-items: start;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+
+}
+
+.title {
+  font-weight: 600;
+  color: colors.$neutral-800;
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+}
+
+.message {
+  font-weight: 400;
+  color: colors.$neutral-600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.2px;
+  text-align: start;
+}
+
+.wrapperIcon {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.wrapperCloseIcon {
+  margin-left: 16px;
+  color: colors.$neutral-600;
+}
+

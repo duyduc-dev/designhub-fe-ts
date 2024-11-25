@@ -1,0 +1,32 @@
+@use '@/assets/styles/colors';
+
+
+.container {
+  transition: all 0.1s linear;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: colors.$neutral-100;
+  }
+
+  &:focus-within {
+    background-color: colors.$transparent;
+    border-color: colors.$neutral-300;
+
+  }
+
+}
+
+.wrapperText {
+  padding: 6px 8px;
+}
+
+.input {
+  padding: 6px 8px;
+  width: 100%;
+  height: 100%;
+  background-color: colors.$transparent;
+  border: none;
+  outline: none;
+}

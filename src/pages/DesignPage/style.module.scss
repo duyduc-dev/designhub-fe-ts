@@ -1,0 +1,23 @@
+@use "@/assets/styles/variables" as v;
+@use '@/assets/styles/colors';
+
+.container {
+  width: calc(100vw - #{v.$sidebar-width});
+  height: calc(100vh - #{v.$sidebar-width});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.containerStage {
+  //display: inline-block;
+}
+
+.toolbar {
+  position: absolute;
+  top: v.$header-height + 10px;
+  background-color: colors.$white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}

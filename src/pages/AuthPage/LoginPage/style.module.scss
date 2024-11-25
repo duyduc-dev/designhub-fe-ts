@@ -1,0 +1,26 @@
+.container {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.wrapperButton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+
+  .btnLoginAction {
+    justify-content: space-between;
+
+    > p {
+      flex: 1
+    }
+  }
+}
+
+

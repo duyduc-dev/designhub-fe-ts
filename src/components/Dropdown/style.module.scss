@@ -1,0 +1,65 @@
+@use '@/assets/styles/colors';
+
+.buttonDropdown {
+  min-width: 174px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding: 0 14px 0;
+  height: 40px;
+  border: 1px solid colors.$border-normal-color;
+  font-weight: 400;
+  transition: 0.1s linear all;
+
+  &.active {
+    border-color: colors.$neutral-900;
+  }
+
+  .titleButton {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .placeholder {
+    color: colors.$neutral-400;
+  }
+
+
+}
+
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: colors.$white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  border-radius: 8px;
+
+  .optionItem {
+    padding: 8px 16px;
+    transition: .1s linear all;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.selected {
+      background-color: colors.$neutral-100;
+    }
+
+    &:hover {
+      background-color: colors.$neutral-50;
+    }
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

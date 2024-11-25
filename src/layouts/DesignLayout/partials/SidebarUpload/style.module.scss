@@ -1,0 +1,23 @@
+.containerImageList {
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+  .containerImageItem {
+    overflow: hidden;
+    border-radius: 6px;
+    max-height: 120px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .imageItem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
